@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Output from builds
+dist/
+build/
+.out/
+
+# TypeScript cache and logs
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage directory used by Jest
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# MacOS and system files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE specific
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

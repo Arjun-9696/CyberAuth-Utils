@@ -1,0 +1,42 @@
+{
+  "name": "cyberauth-utils",
+  "version": "0.0.1",
+  "description": "Lightweight, secure authentication utilities for full-stack app",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arjun-9696/CyberAuth-Utils.git"
+  },
+  "keywords": [
+    "auth",
+    "jwt",
+    "bcrypt",
+    "cookie",
+    "nextjs",
+    "auth",
+    "utils"
+  ],
+  "author": "Mallikarjun H",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arjun-9696/CyberAuth-Utils/issues"
+  },
+  "homepage": "https://github.com/Arjun-9696/CyberAuth-Utils#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie": "^1.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9"
+  }
+}
