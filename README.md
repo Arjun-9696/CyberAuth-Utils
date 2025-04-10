@@ -1,4 +1,4 @@
-# 🚀 CyberAuth Utils v0.0.1
+# 🚀 CyberAuth Utils v0.0.1 [![npm version](https://img.shields.io/npm/v/@arjun-9696/cyberauth-utils)](https://www.npmjs.com/package/@arjun-9696/cyberauth-utils)
 
 A lightweight package for secure authentication utilities.
 ## 🔐 Features
@@ -83,3 +83,5 @@ console.log('Parsed Cookies:', cookies);
 ## License
 
 MIT
+
+
