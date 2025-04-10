@@ -1,4 +1,4 @@
-# 🚀 CyberAuth Utils v1.0.0
+# 🚀 CyberAuth Utils v0.0.1
 
 A lightweight package for secure authentication utilities.
 ## 🔐 Features
