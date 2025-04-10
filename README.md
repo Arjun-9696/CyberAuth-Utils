@@ -30,13 +30,54 @@ npm install cyberauth-utils
 ## Usage
 
 ```ts
-// hashPassword(password: string): Promise<string>
 import { hashPassword } from 'cyberauth-utils';
 
 const password = 'mySecurePassword123!';
 const hashedPassword = await hashPassword(password);
 
 console.log('Hashed Password:', hashedPassword);
+```
+```ts
+import { generateJWT } from 'cyberauth-utils';
+
+const payload = { userId: '123', role: 'admin' };
+const secret = 'my_super_secret_key';
+const token = generateJWT(payload, secret, { expiresIn: '2h' });
+
+console.log('JWT Token:', token);
+```
+```ts
+import { verifyJWT } from 'cyberauth-utils';
+
+const payload = verifyJWT(token, 'my_super_secret_key');
+
+if (payload) {
+  console.log('Decoded Payload:', payload);
+} else {
+  console.log('Invalid token');
+}
+```
+```ts
+import { setSecureCookie } from 'cyberauth-utils';
+
+const cookie = setSecureCookie('authToken', 'xyz123token', {
+  maxAgeSeconds: 3600,
+  path: '/',
+  httpOnly: true,
+  secure: true,
+  sameSite: 'lax',
+});
+
+console.log('Set-Cookie Header:', cookie);
+```
+```ts
+import { parseCookies } from 'cyberauth-utils';
+
+const cookieHeader = 'authToken=xyz123token; theme=dark';
+const cookies = parseCookies(cookieHeader);
+
+console.log('Parsed Cookies:', cookies);
+// Output: { authToken: 'xyz123token', theme: 'dark' }
 ```
 
 ## License
