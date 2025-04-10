@@ -30,6 +30,7 @@ npm install cyberauth-utils
 ## Usage
 
 ```ts
+// hashPassword(password: string): Promise<string>
 import { hashPassword } from 'cyberauth-utils';
 
 const password = 'mySecurePassword123!';
